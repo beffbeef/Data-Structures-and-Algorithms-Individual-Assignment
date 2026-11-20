@@ -9,6 +9,18 @@ Keep this concise and specific to your implementation.
 - Which operation(s) do you predict may scale poorly?
 - What will you investigate first?
 
+
+Test summary: total: 6; failed: 0; succeeded: 3; skipped: 3; duration: 2,0s
+Build succeeded in 2,8s
+PS C:\Users\casper.bengtsson2\Documents\GitHub\Data Structures and Algorithms, Individual Assignment> dotnet run --project Standalone/src/FrontierDispatch.App -- --baseline
+Baseline world-query workload
+Locations: 2500
+Connections: 9800
+Iterations: 5000
+Elapsed: 443 ms
+Checksum: 6267100
+Absolute time varies by machine. Keep this result for before/after comparison.
+
 ## 2. Data representation
 
 Describe important changes/retained choices, operations affected, and time/memory trade-offs.
