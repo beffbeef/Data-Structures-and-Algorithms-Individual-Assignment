@@ -5,11 +5,25 @@ Keep this concise and specific to your implementation.
 ## 1. Initial analysis
 
 - How are locations and connections represented in the baseline?
+
+Locations by ints and "ids".
+Connections by ints and fromLocationId.
+
 - Which operations appear frequent?
-- Which operation(s) do you predict may scale poorly?
+
+Operations that appear the most is Linear search in FindLocationByID and FindOutgoingConnections.
+
+- Which operation(s) do you predict may scale poorly? 
+
+I think it will scale poorly because its a linear search, which tend to scale poorly when the data is bigger since it scales with O(n).
+
 - What will you investigate first?
+How to improve the speed of the Linear search to make it more efficient to use.
 
 
+
+
+BaseLine-----
 Test summary: total: 6; failed: 0; succeeded: 3; skipped: 3; duration: 2,0s
 Build succeeded in 2,8s
 PS C:\Users\casper.bengtsson2\Documents\GitHub\Data Structures and Algorithms, Individual Assignment> dotnet run --project Standalone/src/FrontierDispatch.App -- --baseline
